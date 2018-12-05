@@ -154,7 +154,9 @@ export default class Table extends React.Component{
 
     generateUid(data){
         let i = 0;
-        if(typeof data !== 'array'){
+        console.log(data);
+        if(typeof data === 'string'){
+            console.log('sdfasg');
             return data;
         }
         return data = data.map(el => {
@@ -174,6 +176,7 @@ export default class Table extends React.Component{
             data = this.generateUid(data);
             this.state.data = data;
             this.state.activePageNumber = 0;
+            this.state.selectedPerson = '';
         }
         this.state.pageCount = Math.ceil(data.length / this.props.maxTableLength);
 

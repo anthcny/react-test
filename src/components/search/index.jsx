@@ -12,6 +12,10 @@ export class SearchInTable extends React.Component{
         this.search = this.search.bind(this);
     }
 
+    componentDidMount(){
+        this.setState({searchText: ''});
+    }
+
     updateState(){
         this.state = {
             ...this.state,
