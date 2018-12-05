@@ -20,6 +20,8 @@
 
 .switchButton:hover{
     background-color: antiquewhite;
+    transition-property: background-color;
+    transition-duration: 300ms;
 }
 
 .switchInput{

@@ -12,9 +12,11 @@
 }
 
 .tab:hover{
-    border-bottom: 2px solid $warn; 
+    border-bottom: 2px solid $warn;
 }
 
 .active{
     color: $warn;
+    transition-property: color;
+    transition-duration: 200ms;
 }

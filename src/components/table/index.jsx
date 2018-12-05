@@ -154,9 +154,7 @@ export default class Table extends React.Component{
 
     generateUid(data){
         let i = 0;
-        console.log(data);
         if(typeof data === 'string'){
-            console.log('sdfasg');
             return data;
         }
         return data = data.map(el => {
