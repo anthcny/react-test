@@ -1,0 +1,71 @@
+@import 'vars';
+
+.bySmaller{
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 0 3px;
+    background: transparent;
+    border-bottom: solid 7px $warn;
+    border-top-width: 0;
+}
+
+.byBigger{
+    left: 3px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: solid 5px transparent;
+    margin: 4px 4px 0 3px;
+    background: transparent;
+    border-top: solid 7px $warn;
+    border-bottom-width: 0;
+}
+
+
+.active{
+    color: $warn;
+}
+
+.searchArea{
+    width: 616px;
+    height: 300px;
+    text-align: center;
+}
+
+.table{
+    width: 100%;
+    margin-top: 10px;
+    max-height: 500px;
+    
+    thead, tbody { 
+        display: block;
+    }
+
+    thead tr,th:first-child, tbody tr,td:first-child{
+        width: 50px;
+    }
+
+    td, th {
+        width: 100px;
+        max-width: 100px;
+        text-align: center;
+    }
+
+    td:nth-child(4), th:nth-child(4){
+        width: 200px;
+        max-width: 200px;
+    }
+
+    tbody {
+        height: 400px;       
+        overflow-y: auto;    /* Trigger vertical scroll    */
+        overflow-x: hidden;  /* Hide the horizontal scroll */
+    }
+}
+
+
+
+

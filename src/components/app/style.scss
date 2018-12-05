@@ -1,0 +1,43 @@
+@import 'vars';
+
+
+.container{
+    height: 100%;
+    min-width: 760px;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(224, 252, 252);
+}
+
+.menu {
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.tableArea{
+    tr, th, td{
+        padding: 5px;
+        border-bottom: 1px solid lightsteelblue;
+    }
+
+    table tr:nth-child(2n) {
+        background-color: rgb(236, 252, 252);
+    }
+    tbody{
+        tr:hover{
+            background-color: rgb(247, 239, 235);
+            transition-property: background-color;
+            transition-duration: 600ms;
+            cursor: pointer;
+        }
+    }
+    thead{
+        th:hover{
+            cursor: pointer;
+            color: $warn;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+@import 'vars';
+
+.tablenav{
+    font-size: 0.9rem;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.switchButton{
+    width: 70px;
+    padding: 3px 6px;
+    margin: 0 10px;
+    font-size: 0.9rem;
+    background-color: $info;
+    cursor: pointer;
+    border-radius: 5px;
+    outline: none;
+}
+
+.switchButton:hover{
+    background-color: antiquewhite;
+}
+
+.switchInput{
+    outline: none;
+    border: none;
+    width: 50px;
+    margin: 0 5px;
+    font-size: 1.2rem;
+    background-color: inherit;
+}
+
+.switchInput:hover{
+    color: $warn;
+}
+
+.pageState{
+    font-size: 1.2rem;
+    color: rgb(34, 29, 29);
+}

@@ -1,0 +1,9 @@
+@import 'vars';
+
+.tabs{
+    display: flex;
+}
+
+.active{
+    background-color: $warn;
+}

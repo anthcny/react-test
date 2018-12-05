@@ -1,0 +1,20 @@
+@import 'vars';
+
+.tab{
+    padding: 2px 4px;
+    margin: 0 2px;
+    min-width: 70px;
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    height: 1.5em;
+    font-size: 1.2rem;
+}
+
+.tab:hover{
+    border-bottom: 2px solid $warn; 
+}
+
+.active{
+    color: $warn;
+}

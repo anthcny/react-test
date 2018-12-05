@@ -1,0 +1,50 @@
+@import 'vars';
+@import url(http://netdna.bootstrapcdn.com/font-awesome/3.0/css/font-awesome.css);
+
+.container{
+    display: flex;
+}
+
+
+.searchline{
+    margin-left: 15px;
+    padding: 2px 5px;
+    background-color: inherit;
+    border: none;
+    border-bottom: 1px solid rgb(158, 149, 145);
+    outline: none;
+    font-size: 1rem;
+    margin-right: 10px;
+    width: 500px;
+    max-width: 100%;
+    transition-property: width;
+    transition-duration: 600ms;
+}
+
+.searchline:focus{
+    border-bottom: 1px solid $warn;
+}
+
+.searchline::-webkit-input-placeholder { 
+    font-family: FontAwesome;
+    font-weight: normal;
+    overflow: visible;
+    vertical-align: top;
+    display: inline-block !important;
+    padding-top: 2px;
+    color: hsl(9, 40%, 60%);
+    }
+
+.searchbutton{
+    width: 70px;
+    background-color: $info;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    outline: none;
+}
+
+.searchbutton:hover{
+    background-color: antiquewhite;
+}
